@@ -9,7 +9,9 @@ Template Name: Single Food Page
 <div class="col-xs-12">
 	<div class="posts row">
 	
-		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+		<?php if (have_posts()) : while (have_posts()) : the_post(); 
+
+		?>
 
 		<div class="post-title col-xs-12">
 		
@@ -56,6 +58,16 @@ Template Name: Single Food Page
 				<?php the_category(' ');?>
 			</div>
 
+
+			<div class="separator-dot"></div>
+
+
+			<h3><span class="pink"><span class="glyphicon glyphicon-stats"></span>	
+				<?php echo do_shortcode('[views]' );?></span> <span class="slim">VIEWS &nbsp; &nbsp;/</span><?php if( function_exists('dot_irecommendthis') ) dot_irecommendthis(); ?><br></h3>
+				
+			<br>
+
+			<?php echo do_shortcode('[ssba]'); ?>
 
 		</div><!-- recipe-info -->
 		

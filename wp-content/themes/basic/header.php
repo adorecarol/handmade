@@ -3,13 +3,13 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><?php if(is_home()) bloginfo('name'); else wp_title(''); ?></title>
-	<link href='https://fonts.googleapis.com/css?family=Arbutus+Slab' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/animate.css">
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
 	<?php wp_head();?>
 </head>
-<body>
+<body id="top">
 
 <!-- <div class="container-fluid topback text-center">
 	<img src="<?php bloginfo('template_directory'); ?>/images/handmade-logo-01.png" class="img-responsive center-block">
@@ -18,6 +18,7 @@
 
 
 <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+
 
 <div class="container">
 

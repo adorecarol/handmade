@@ -65,9 +65,45 @@ a:hover {
 	display: block;
 }
 
+
 .clear {
 	clear: both;
 }
+
+
+.gray {
+	color: #ccc;
+}
+
+
+.pad {
+	padding: 0px 10px;
+}
+
+
+.slim {
+	font-weight: 300 !important;
+}
+
+
+.glyphicon-heart {
+	padding-right: 5px;
+	padding-left: 18px;
+	position: relative;
+	top: 2px;
+}
+
+
+.glyphicon-stats {
+	padding-right: 5px;
+}
+
+
+.pink {
+	color: #f37875;
+	font-weight: 400;
+}
+
 
 
 
@@ -99,11 +135,10 @@ nav.navbar-default {
 }
 
 
-
 /* ----------------------------- INDEX ---------------------------- */
 
 #content {
-	margin-top: 60px;
+	margin-top: 100px;
 }
 
 
@@ -184,7 +219,7 @@ nav.navbar-default {
 
 
 
-/* ----------------------------- RECIPE --------------------------- */
+/* ----------------------------- POSTS --------------------------- */
 
 .post-title h2 {
 	text-transform: uppercase;
@@ -278,9 +313,6 @@ nav.navbar-default {
 }
 
 
-
-
-
 /* ----------------------------- ARCHIVE --------------------------- */
 
 .feat-title a {
@@ -291,15 +323,38 @@ nav.navbar-default {
 	box-shadow: -12px 0px 0 #f37875, 12px 0px 0 #f37875;
 }
 
+
 .feat-title {
 	padding-left: 12px;
 }
+
+
+
+
+
+
+
+/* ----------------------------- SHARE --------------------------- */
+
+.share {
+	padding-bottom: 50px;
+}
+
+
+.share h3 {
+	color: #ddd;
+	font-weight: 400;
+	text-transform: uppercase;
+}	
+
+
+
 
 /* ----------------------------- FOOTER --------------------------- */
 
 #footer {
 	border-top: 5px #f37875 solid;
-	padding: 20px;
+	padding: 20px 20px 50px 20px; 
 	background-color: #f6efdd;
 	margin-top: 50px;
 }
@@ -311,9 +366,98 @@ nav.navbar-default {
 }
 
 
+.popular-posts ul {
+	padding: 0;
+	margin: 0;
+
+}
+
+
+.popular-posts ul li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	height: 75px;
+	overflow: hidden;
+}
+
+
+.ads img {
+	width: 150px;
+}
+
+
 .copy {
 	padding: 10px 0px;
 }
+
+
+.contact a {
+	color: #f37875;
+	font-weight: 400;
+}
+
+
+ .about a{
+	color: #f37875;
+}
+
+
+.about a:hover {
+	font-weight: 400;
+}
+
+
+.glyphicon-chevron-up {
+	font-size: 4em;
+}
+
+
+#back-top {
+	position: fixed;
+	bottom: 360px;
+	right: 30px;
+}
+
+
+#back-top a {
+	width: 75px;
+	display: block;
+	text-align: center;
+	font: 11px/100% Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #f37875;
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+
+
+#back-top a:hover .glyphicon{
+	color: #fff;
+}
+
+
+/* arrow icon (span tag) */
+#back-top span {
+	display: block;
+	margin-bottom: 7px;
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+
+
+#back-top a:hover span {
+	background-color: #f37875;
+}
+
+
+
+
 
 
 

@@ -1,0 +1,16 @@
+.dot-irecommendthis { 
+	color: #ccc;
+	border: 0 !important;
+	margin-bottom: 10px;
+	display: inline-block;
+	text-decoration: none;
+	min-height: 14px;
+}
+
+	
+.dot-irecommendthis:hover, .dot-irecommendthis.active { 
+	color: #F56559 !important;
+ 	border: 0 !important;
+	margin: 0 0 10px 0 !important;
+	text-decoration: none;
+}

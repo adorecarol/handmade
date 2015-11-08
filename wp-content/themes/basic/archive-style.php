@@ -26,7 +26,7 @@ Template Name: Single Food Page
 			?>
 
 
-			<div class="col-xs-12 col-sm-8">
+			<div class="col-xs-12 col-md-8">
 
 			  	<a href="<?php the_permalink(); ?>" alt="<?php the_title(); ?>">
 					
@@ -41,7 +41,7 @@ Template Name: Single Food Page
 			</div><!-- col-xs-12 -->
 
 
-			<div class="col-xs-12 col-xs-4">
+			<div class="col-xs-12 col-md-4">
 
 				<h1 class="feat-title">
 					<a href="<?php the_permalink(); ?>" alt="<?php the_title(); ?>"><?php the_title(); ?></a>

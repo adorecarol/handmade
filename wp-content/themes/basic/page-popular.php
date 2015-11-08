@@ -1,6 +1,6 @@
 <?php get_header();
 /*
-Template Name: Contact Page
+Template Name: Popular Page
 */
 ?>
 

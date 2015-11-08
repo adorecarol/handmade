@@ -13,7 +13,7 @@ Template Name: Single Food Page
 
 		<div class="post-title col-xs-12">
 		
-		    <h2><?php the_title(); ?></h2> 
+		    <h2><span class="glyphicon glyphicon-sunglasses"></span><?php the_title(); ?></h2> 
 
 		    <div class="separator"></div>
 
@@ -49,7 +49,7 @@ Template Name: Single Food Page
 
 
 				
-			<div class="materials col-xs-12">
+			<div class="materials">
 
 				<h3>Materials</h3>
 
@@ -79,6 +79,43 @@ Template Name: Single Food Page
 			    	<?php the_content(); ?>
 
 			</div><!-- instructions -->
+
+
+
+			<div class="share col-xs-12 col-md-4">
+
+				<div class="sticky hidden-xs hidden-sm">
+
+						<h3><span class="pink"><span class="glyphicon glyphicon-stats"> </span>	
+							<?php echo do_shortcode('[views]' );?></span> <span class="slim">VIEWS &nbsp; &nbsp;/</span><?php if( function_exists('dot_irecommendthis') ) dot_irecommendthis(); ?>
+
+						<div class="separator-dot"></div>
+
+
+						<h3>Share this</h3>
+				
+						<?php echo do_shortcode('[ssba]'); ?>
+
+				</div>
+
+
+				<div class="hidden-md hidden-lg">
+
+						<h3><span class="pink"><span class="glyphicon glyphicon-stats"> </span>	
+							<?php echo do_shortcode('[views]' );?></span> <span class="slim">VIEWS &nbsp; &nbsp;/</span><?php if( function_exists('dot_irecommendthis') ) dot_irecommendthis(); ?>
+
+						<div class="separator-dot"></div>
+
+						<h3>Share this</h3>
+				
+						<?php echo do_shortcode('[ssba]'); ?>
+
+				</div>
+
+
+			</div><!-- share -->
+
+
 
 
 		    <div class="separator clear"></div>
