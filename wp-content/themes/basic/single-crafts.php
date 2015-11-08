@@ -40,7 +40,9 @@ Template Name: Single Food Page
 			<div class="separator-dot clear"></div><!-- separator -->
 
 			<div class="categ">
-				<?php the_category(' ');?>
+
+				<?php the_tags('', ' ');?>
+				
 			</div><!-- categ -->
 
 

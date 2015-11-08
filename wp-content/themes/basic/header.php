@@ -7,9 +7,6 @@
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
-	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/bootstrap.min.js"></script>
 	<?php wp_head();?>
 </head>
 <body>
@@ -56,12 +53,12 @@
 	    <div id="navbarCollapse" class="collapse navbar-collapse">
 
 	        <ul class="nav navbar-nav navbar-right">
-	            <li><a href="#">Food</a></li>
-	            <li><a href="#">Style</a></li>
-	            <li><a href="#">Crafts</a></li>
-	            <li><a href="#">Popular</a></li>
-	            <li class="active"><a href="#">About</a></li>
-	            <li><a href="#">Contact</a></li>
+	            <li class="<?php is_active('food'); ?>"><a href="<?php bloginfo('url'); ?>/food">Food</a></li>
+	            <li class="<?php is_active('style'); ?>"><a href="<?php bloginfo('url'); ?>/style">Style</a></li>
+	            <li class="<?php is_active('crafts'); ?>"><a href="<?php bloginfo('url'); ?>/crafts">Crafts</a></li>
+	            <li class="<?php is_active('copular'); ?>"><a href="<?php bloginfo('url'); ?>/popular">Popular</a></li>
+	            <li class="<?php is_active('about') ?>"><a href="<?php bloginfo('url'); ?>/about">About</a></li>
+	            <li class="<?php is_active('contact'); ?>"><a href="<?php bloginfo('url'); ?>/contact">Contact</a></li>
 	        </ul>
 	    </div><!-- navbarCollapse -->
 
