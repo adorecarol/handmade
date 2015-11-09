@@ -1,20 +1,19 @@
 <?php get_header(); ?>
 
 
-
-
-
-
-
 		<ul class="feat-post">
 			
 		<?php
 
 			$archive_all = new WP_Query(array(
-			     'post_type' =>  array( 'post', 'food', 'style', 'craft' ),
-			     'posts_per_page' => 10, 
+			     'post_type' =>  array( 'post', 'food', 'style', 'crafts' ),
+			     'posts_per_page' => 20,
 			));
 
+			echo "<h2>Found: $archive_all->found_posts</h2>";
+
+
+			if ($archive_all->have_posts()){
 
 			while ($archive_all->have_posts()) : $archive_all->the_post(); ?>
 
@@ -73,7 +72,7 @@
 			</li>
 
 
-		<?php endwhile; ?>
+		<?php endwhile; } ?>
 
 		</ul>
 

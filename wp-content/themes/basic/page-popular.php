@@ -18,8 +18,8 @@ Template Name: Popular Page
 		<?php 
 			
 			$pop_all = new WP_Query(array(
-			     'post_type' =>  array( 'post', 'food', 'style', 'craft' ),
-			     'showposts' => 999,
+			     'post_type' =>  array( 'post', 'food', 'style', 'crafts' ),
+			     'posts_per_page' => -1,
 			));
 
 
@@ -28,19 +28,42 @@ Template Name: Popular Page
 
 			<li class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 
-					<div class="feat-image">
+					<div class="feat-image ease-in-out">
 
 					  	<a href="<?php the_permalink(); ?>" alt="<?php the_title(); ?>">
 							
 							<?php	
 								if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
 									the_post_thumbnail('large',  array( 'class' => 'img-responsive' ));
-								} else {
-									echo '<img src="';
-									bloginfo('template_directory');
-									echo '/images/hearts.jpg" class="img-responsive">';
-								}
+								} 
 							?>
+
+
+							<div class="caption-overlay hidden-xs ease-in-out">
+
+								<p><span class="pink"><?php 
+
+								if( get_post_type() == 'food' ){
+
+									echo 'FOOD';
+
+								} elseif( get_post_type() == 'style' ){
+
+									echo 'STYLE';
+
+								} elseif( get_post_type() == 'craft' ){
+
+									echo 'CRAFTS';
+
+								} 
+
+								?></span></p>
+
+
+							</div><!-- caption-overlay -->
+
+
+
 
 						</a>
 
