@@ -30,9 +30,8 @@
 			
 	        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
 	            <span class="sr-only">Toggle navigation</span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
+	            <span class="glyphicon glyphicon-chevron-down"></span>
+
 	        </button>
 
 	    	<div class="logo">

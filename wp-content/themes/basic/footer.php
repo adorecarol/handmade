@@ -19,27 +19,35 @@
 
 				<div class="about col-xs-12 col-sm-6 col-md-4 col-lg-4">
 
-					<h3>About</h3>
+					<h3 class="animated"><a href="<?php bloginfo('url'); ?>/about"><span class="glyphicon glyphicon-info-sign"> </span> About</a></h3>
 
 					<p class="clear"><span class="pink">Handmade.com</span> is a women's lifestyle company focused on creating happiness every day through a homemade lifestyle. On this blog we share home decor projects, recipes, and crafts, as well as bits of life here in the Midwest.</p>
 
+					<div class="separator-line"></div>
+
+					<h4 class="pink"><span class="glyphicon glyphicon-road"> </span> FOLLOW US</h4>
+
 					<a href="#">FACEBOOK </a> <span class="pad">/</span> <a href="#">TWITTER</a> <span class="pad">/</span> <a href="#">INSTAGRAM</a></br>
 					
+
+				<div class="separator-line visible-xs clear"></div>
 
 
 				</div><!-- about -->
 
 
 
-
 				<div class="popular-posts col-xs-12 col-sm-6 col-md-4 col-lg-4">
 
-					<h3>Popular</h3>
+					<h3 class="animated"><a href="<?php bloginfo('url'); ?>/popular"><span class="glyphicon glyphicon-star"> </span> Popular</a></h3>
 					<?php if (function_exists('get_most_viewed')): ?>
 						<ul>
 					        <?php get_most_viewed(); ?>
 					    </ul>
 					<?php endif; ?>
+
+
+				<div class="visible-xs separator-line clear"></div>
 
 				</div><!-- popular-posts -->
 
@@ -48,18 +56,19 @@
 
 				<div class="contact col-xs-12 col-sm-6 col-md-4 col-lg-4">
 
-					<h3>Contact</h3>
+					<h3 class="animated"><a href="<?php bloginfo('url'); ?>/contact"><span class="glyphicon glyphicon-envelope"> </span> Contact</a></h3>
 
-					<div class="col-xs-12 col-sm-7">
+					<div class="col-xs-12 col-sm-6">
 						<div class="row skinny">
 							<p>If you are interested in partnering with handmade.com please email <a href="mailto:jenni@gmail.com">jenni@handmade.com</a></p>
-
+							
+							<a href="<?php bloginfo('url'); ?>/advertise-with-us/">Advertise with Us</a>
 							
 						</div>
 					</div>
 
 
-					<div class="hidden-xs col-xs-5 col-sm-5">
+					<div class="hidden-xs col-xs-12 col-sm-6">
 
 
 							<?php 
@@ -75,7 +84,7 @@
 
 								<div class="ads">
 
-								  	<a href="<?php the_permalink(); ?>" target="_blank" alt="<?php the_title(); ?>">
+								  	<a href="<?php the_field('ad_link');?>" target="_blank" alt="<?php the_title(); ?>">
 										
 										<?php	
 											if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.

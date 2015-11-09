@@ -1,13 +1,23 @@
 <?php get_header(); ?>
 
+
+
+
+
+
+
 		<ul class="feat-post">
 			
-		<?php query_posts( array(
-		     'post_type' => array( 'post', 'food', 'style', 'craft' ),
-		     'showposts' => 12 )
-		); ?>
+		<?php
 
-		<?php while ( have_posts() ) : the_post(); ?>
+			$archive_all = new WP_Query(array(
+			     'post_type' =>  array( 'post', 'food', 'style', 'craft' ),
+			     'showposts' => 999,
+			));
+
+
+			while ($archive_all->have_posts()) : $archive_all->the_post(); ?>
+
 
 
 			<li class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
