@@ -142,7 +142,7 @@ Template Name: Single Food Page
 				<h4><em>Try these other DO-IT-YOURSELF projects</em></h4>
 				
 				<?php $args = array(
-					'post_type'=>'style', 
+					'post_type'=>'crafts', 
 					'orderby'=>'rand', 
 					'posts_per_page'=>'6',
 					'post__not_in' => array($post->ID));

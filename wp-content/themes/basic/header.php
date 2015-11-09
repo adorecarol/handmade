@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title><?php if(is_home()) bloginfo('name'); else wp_title(''); ?></title>
+	<title><?php if(is_home()){ bloginfo('name'); } else { bloginfo('name'); echo ' /'; wp_title(''); }?></title>
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/animate.css">
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css">
@@ -67,8 +67,30 @@
 </nav>
 
 
+<?php if(is_home()){
+	echo '<div class="container-fluid topback text-center hidden-xs">
+			<img src="';
+	bloginfo('template_directory');
+	echo '/images/handmade-logo-01.png" data-pin-no-hover="true" class="img-responsive center-block">
+				<h1 class="cd-headline slide">
+
+					<span>Personalize your life with DIY</span>
+					<span class="cd-words-wrapper" style="width: 130px;">
+						<b class="is-hidden pink">Recipes</b>
+						<b class="is-visible pink">Style</b>
+						<b class="is-hidden pink">Crafts</b>
+					</span>	
+				</h1>
+			</div><!-- topback -->';
+	} ?>
+
+
 <div id="content" class="container">
 	<div class="row">
   		
+
+
+
+
 
 

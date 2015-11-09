@@ -135,6 +135,7 @@
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/scrolltotop.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
 <script async defer data-pin-hover="true" data-pin-round="true" data-pin-tall="true" src="//assets.pinterest.com/js/pinit.js"></script>
 
 <script type="text/javascript">

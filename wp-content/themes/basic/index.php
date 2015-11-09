@@ -12,7 +12,7 @@
 
 			$archive_all = new WP_Query(array(
 			     'post_type' =>  array( 'post', 'food', 'style', 'craft' ),
-			     'showposts' => 999,
+			     'posts_per_page' => 10, 
 			));
 
 
