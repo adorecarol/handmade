@@ -61,6 +61,9 @@
 					<div class="col-xs-12 col-sm-6">
 						<div class="row skinny">
 							<p>If you are interested in partnering with handmade.com please email <a href="mailto:jenni@gmail.com">jenni@handmade.com</a></p>
+
+
+							<div class="separator-line clear"></div>
 							
 							<a href="<?php bloginfo('url'); ?>/advertise-with-us/">Advertise with Us</a>
 							

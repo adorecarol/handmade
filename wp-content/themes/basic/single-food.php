@@ -44,8 +44,14 @@ Template Name: Single Food Page
 			<h4><span class="info-b">Prep time:</span> <?php the_field('prep_time'); ?> minutes</h4>
 			<h4><span class="info-b">
 				<?php 
-					if( get_field('method')=='bake: Bake'&'cook: Cook'){
-						echo the_field('method').' time: '.the_field('time'). ' minutes';
+					if( get_field('method')=='bake'){
+						echo 'Bake time: </span>';
+						the_field('time');
+						echo ' minutes';
+					} elseif( get_field('method')=='cook'){
+						echo 'Cook time: </span>';
+						the_field('time');
+						echo ' minutes';
 					}
 					?> 
 					</span>
@@ -63,7 +69,7 @@ Template Name: Single Food Page
 
 
 			<h3><span class="pink"><span class="glyphicon glyphicon-stats"></span>	
-				<?php echo do_shortcode('[views]' );?></span> <span class="slim">VIEWS &nbsp; &nbsp;/</span><?php if( function_exists('dot_irecommendthis') ) dot_irecommendthis(); ?><br></h3>
+				<?php echo do_shortcode('[views]' );?></span> <span class="slim gray">VIEWS &nbsp; &nbsp;/</span><?php if( function_exists('dot_irecommendthis') ) dot_irecommendthis(); ?><br></h3>
 				
 			<br>
 

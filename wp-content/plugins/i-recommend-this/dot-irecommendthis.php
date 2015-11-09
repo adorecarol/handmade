@@ -470,13 +470,13 @@ if ( ! class_exists( 'DOT_IRecommendThis' ) )
 
 					if( ($recommended == 0) &&  $options['hide_zero'] == 1 ) {
 
-						$output = '<span class="glyphicon glyphicon-heart animated pulse infinite"></span><span class="dot-irecommendthis-count">&nbsp;</span> <span class="dot-irecommendthis-suffix slim gray">'. $suffix .'</span>';
+						$output = '<span class="glyphicon glyphicon-heart animated pulse infinite"></span><span class="dot-irecommendthis-count pink">&nbsp;</span> <span class="dot-irecommendthis-suffix slim gray">'. $suffix .'</span>';
 
 						return $output;
 
 					} else {
 
-						$output = '<span class="glyphicon glyphicon-heart animated pulse infinite"></span><span class="dot-irecommendthis-count">'. $recommended .'</span> <span class="dot-irecommendthis-suffix slim gray">'. $suffix .'</span>';
+						$output = '<span class="glyphicon glyphicon-heart animated pulse infinite"></span><span class="dot-irecommendthis-count pink">'. $recommended .'</span> <span class="dot-irecommendthis-suffix slim gray">'. $suffix .'</span>';
 
 						return $output;
 
@@ -532,7 +532,7 @@ if ( ! class_exists( 'DOT_IRecommendThis' ) )
 					elseif( $recommended == 1 ) { $suffix = $text_one_suffix; }
 					else { $suffix = $text_more_suffix; }
 
-					$output = '<span class="glyphicon glyphicon-heart animated pulse infinite"></span><span class="dot-irecommendthis-count">'. $recommended .'</span> <span class="dot-irecommendthis-suffix slim gray">'. $suffix .'</span>';
+					$output = '<span class="glyphicon glyphicon-heart animated pulse infinite"></span><span class="dot-irecommendthis-count pink">'. $recommended .'</span> <span class="dot-irecommendthis-suffix slim gray">'. $suffix .'</span>';
 
 					$dot_irt_html = apply_filters( 'dot_irt_before_count', $output );
 
