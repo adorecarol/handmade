@@ -10,12 +10,7 @@
 	<?php wp_head();?>
 </head>
 <body id="top">
-
-<!-- <div class="container-fluid topback text-center">
-	<img src="<?php bloginfo('template_directory'); ?>/images/handmade-logo-01.png" class="img-responsive center-block">
-</div><!-- topback -->
-
-
+	
 
 <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
 
