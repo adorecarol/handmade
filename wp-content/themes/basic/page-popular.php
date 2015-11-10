@@ -51,7 +51,7 @@ Template Name: Popular Page
 
 									echo 'STYLE';
 
-								} elseif( get_post_type() == 'craft' ){
+								} elseif( get_post_type() == 'crafts' ){
 
 									echo 'CRAFTS';
 

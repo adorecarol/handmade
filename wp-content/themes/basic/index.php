@@ -10,8 +10,6 @@
 			     'posts_per_page' => 20,
 			));
 
-			echo "<h2>Found: $archive_all->found_posts</h2>";
-
 
 			if ($archive_all->have_posts()){
 
@@ -43,7 +41,7 @@
 
 									echo 'STYLE';
 
-								} elseif( get_post_type() == 'craft' ){
+								} elseif( get_post_type() == 'crafts' ){
 
 									echo 'CRAFTS';
 
